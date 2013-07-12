@@ -1,0 +1,18 @@
+/*
+Theme Name: Responsive Easel
+Theme URI: http://comicpress.org
+Template: easel
+Description: Publish a comic with WordPress.  <a href="http://comicpress.org">Visit the ComicPress Website.</a>  For ComicPress 2.9.2 and above.
+Author: Sarah Frisk
+Author URI: http://www.sarahfrisk.net
+Version: 1.0
+.
+The CSS, XHTML and design is released under GPL v3:
+http://www.opensource.org/licenses/gpl-3.0.html
+.
+*/
+
+@import url("css/bootstrap.min.css");
+@import url("css/bootstrap-responsive.min.css");
+@import url("css/custom.css");
+
