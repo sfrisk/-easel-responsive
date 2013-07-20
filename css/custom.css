@@ -63,7 +63,7 @@ textarea#comment{
 .mininav-wrapper {float:right;}
 .menunav-social-wrapper{float:left;}
 
-.menunav-rss, .mininav-wrapper a, .menunav-social-wrapper a{
+.menunav-rss, .mininav-wrapper a{
 	padding: 10px 15px 10px;
 	color: #777;
 	text-decoration: none;
@@ -77,7 +77,65 @@ textarea#comment{
 	background-color: transparent;
 }
 
-/* menu-nav */
+/* menunav social icons */
+
+.menunav-social-wrapper {
+	float: right;
+	display: inline-block;
+	padding: 5px 15px 10px;
+}
+
+.menunav-social {
+	text-indent: -9999px;
+	display: inline-block;
+	float: left;
+	height: 25px;
+	width: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+.menunav-twitter {
+	background: url('../images/icons/twitter.png') no-repeat;
+}
+.menunav-rss2 {
+	background: url('../images/icons/rss.png') no-repeat;
+	margin-right: 3px;
+}
+.menunav-facebook {
+	background: url('../images/icons/facebook.png') no-repeat;
+}
+.menunav-googleplus {
+	background: url('../images/icons/googleplus.png') no-repeat;
+}
+.menunav-linkedin {
+	background: url('../images/icons/linkedin.png') no-repeat;
+}
+.menunav-pinterest {
+	background: url('../images/icons/pinterest.png') no-repeat;
+}
+.menunav-youtube {
+	background: url('../images/icons/youtube.png') no-repeat;
+}
+.menunav-flickr {
+	background: url('../images/icons/flickr.png') no-repeat;
+}
+.menunav-tumblr {
+	background: url('../images/icons/tumblr.png') no-repeat;
+}
+.menunav-deviantart {
+	background: url('../images/icons/deviantart.png') no-repeat;
+}
+.menunav-myspace {
+	background: url('../images/icons/myspace.png') no-repeat;
+}
+.menunav-email {
+	background: url('../images/icons/email.png') no-repeat;
+}
+
+.menunav-social:hover {
+	background-position: 0 -25px;
+}
 
 /*blog-post */
 
@@ -245,7 +303,7 @@ refer to the easel plugin  */
 
 	.menunav-social-wrapper{float:none;}
 
-	.menunav-rss, .menunav-social-wrapper a{
+	.menunav-rss{
 		padding: 9px 15px;
 		font-weight: bold;
 		color: #777;
@@ -255,7 +313,7 @@ refer to the easel plugin  */
 		display:block;
 		width: auto;
 	}
-	.menunav-rss:hover, .menunav-social-wrapper a:hover, .menunav-rss:focus, .menunav-social-wrapper a:focus{
+	.menunav-rss:hover, .menunav-rss:focus, .menunav-social-wrapper a:focus{
 		background: #f2f2f2;
 	}
 
