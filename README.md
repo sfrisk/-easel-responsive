@@ -4,9 +4,9 @@
 
 <p>Currently a work in process.</p>
 
-<p><img src="images/screenshots/full.png" /></p>
+<p><img src="images/screenshots/full.png"  style="border: 1px solid #ccc" /></p>
 <p>Full view example</p>
 
 
-<p><img src="images/screenshots/mobile.png" /></p>
+<p><img src="images/screenshots/mobile.png"  style="border: 1px solid #ccc"  /></p>
 <p>Small view example</p>

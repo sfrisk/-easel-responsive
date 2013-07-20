@@ -1,4 +1,8 @@
 
+body, html{
+	height: 100%;
+}
+
 article{
 	margin-bottom: 20px;
 }
@@ -44,9 +48,14 @@ h2.widgettitle, h2.description{
 	height: auto !important;
 	height: 100%;
 	padding-bottom: 50px;
-	margin: 0 auto -60px;
+	margin:0 auto -60px
 }
 
+.commentlist{list-style:none; margin: 0}
+.commentlist li{clear:both;}
+.comment-avatar{float:left; margin: 0 10px 10px 0}
+.comment-author{font-weight:bold;}
+.comment-meta-data{font-size: .8em; line-height: 1em;}
 
 
 textarea#comment{
