@@ -29,13 +29,13 @@ code{
 
 select{max-width: 100%;}
 
-h2.widgettitle{
+h2.widgettitle, h2.description{
 	font-size: 17.5px;
 	line-height: 20px;
 }
 
 .container-fluid{
-	max-width: 1200px; /* CHANGE THIS TO CHANGE WIDTH OF PAGE */
+	max-width: 1000px; /* CHANGE THIS TO CHANGE WIDTH OF PAGE */
 	margin: 0 auto;
 }
 
