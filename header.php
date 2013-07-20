@@ -35,15 +35,26 @@
 <div id="wrap">
 
 		<?php easel_get_sidebar('above-header'); ?>
-		<header id="header">
+	<?php
+	$hgWidth = 'span12';
+	$sWidth = '';
+	 if(is_active_sidebar('sidebar-header')){
+		$hgWidth = "span6";
+		$sWidth = "span6";
+	}
+	?>
+
+
+		<header id="header" class="">
 			<div class="container-fluid">
 				<div class="row-fluid">
-					<hgroup class="header-info span12">
+					<hgroup class="header-info <?php echo $hgWidth; ?>">
 						<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name') ?></a></h1>
 						<h2 class="description"><?php bloginfo('description') ?></h2>
 					</hgroup>
-
-					<?php easel_get_sidebar('header'); ?>
+					<aside class="<?php $sWidth ?>">
+						<?php easel_get_sidebar('header'); ?>
+					</aside>
 				</div>
 			
 			<?php 

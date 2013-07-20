@@ -27,8 +27,15 @@ code{
 	white-space: normal; 
 }
 
+select{max-width: 100%;}
+
+h2.widgettitle{
+	font-size: 17.5px;
+	line-height: 20px;
+}
+
 .container-fluid{
-	max-width: 1200px;
+	max-width: 1200px; /* CHANGE THIS TO CHANGE WIDTH OF PAGE */
 	margin: 0 auto;
 }
 
@@ -95,7 +102,108 @@ textarea#comment{
 		text-align:right;
 	}
 
+.comic-nav-container td{
+	text-align:center;
+}
 
+/* comic layout */
+
+#comic-wrap{
+}
+
+#comic-wrap div{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#comic-head{
+	width: 100%;
+}
+
+.comicSidebars0 #sidebar-left-of-comic,  
+.comicSidebars0 #sidebar-right-of-comic{
+	display:none;
+}
+
+/*this is copying span2 in bootstrap,
+not applying span2 class for these because these
+refer to the easel plugin  */
+#sidebar-left-of-comic,  
+#sidebar-right-of-comic{  
+	width: 14.893617021276595%;
+	*width: 14.840425531914894%;
+    float:left;
+    padding: 0 20px;
+}
+
+#sidebar-right-of-comic{
+	 margin-left: 2.127659574468085%;
+}
+
+
+
+.comicSidebars2 #comic{
+ 	 width: 65.95744680851064%;
+  	*width: 65.90425531914893%;
+  	float:left;
+  	margin-left: 2.127659574468085%;
+}
+
+.comicSidebars1 #comic{
+  width: 82.97872340425532%;
+  *width: 82.92553191489361%;
+  	float:left;
+  	margin-left: 2.127659574468085%;
+}
+
+.comicSidebars1.rightSidebar #comic{
+	margin-left:0px;
+}
+
+#comic-foot{
+	clear:both;
+	width: 100%;
+}
+
+
+
+
+.post-calendar-date {
+	color: #777;
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+	margin-right: 3px;
+}
+
+.post-calendar-date .calendar-date {
+	height: 50px;
+	width: 45px;
+	background: url(../../easel/images/calendar.png) center no-repeat;
+	font-size: 22px;
+	font-style: normal;
+	color: #000;
+	text-align: center;
+	line-height: 100%;
+	padding: 0 2px 0 0;
+}
+
+
+.post-calendar-date .calendar-date span {
+	height: 16px;
+	padding: 1px 0 4px 0;
+	display: block;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+}
+
+.postdate {
+	font-size: 11px;
+}
 /* footer */
 
 #footer, #push{
@@ -108,6 +216,7 @@ textarea#comment{
 
 	#footer p.footer-text{
 		margin: 20px 0;
+		text-align:center;
 	}
 
 

@@ -2,7 +2,24 @@
 <div id="content-wrapper" class="container-fluid">
 	
 	<div id="content-wrapper-head" class="row-fluid"><?php do_action('easel-content-wrapper-head'); ?></div>
-	<div class="row-fluid">
+
+
+	<?php 
+	$comicSidebars="";
+	$comicSidebarCount =0;
+	if(is_active_sidebar('ceo-sidebar-left-of-comic')){
+		$comicSidebars = $comicSidebars . 'leftSidebar ';
+		$comicSidebarCount += 1;
+	}
+	if(is_active_sidebar('ceo-sidebar-right-of-comic')){
+		$comicSidebars = $comicSidebars . 'rightSidebar ';
+		$comicSidebarCount += 1;
+	}
+
+	?>
+
+	<div class="row-fluid <?php echo $comicSidebars;?> comicSidebars<?php echo $comicSidebarCount ?>"> 
+
 		<?php do_action('easel-content-area'); ?>
 		<?php do_action('comic-area'); ?>
 	</div>
@@ -23,9 +40,9 @@ if (!easel_is_signup() && !easel_sidebars_disabled()) {
 			}else{
 			echo 'span8';
 			} ?>">
+		<?php if (is_home() && !easel_sidebars_disabled()) easel_get_sidebar('over-blog'); ?>
 		<?php do_action('comic-blog-area'); ?>
 		<?php do_action('easel-narrowcolumn-area'); ?>
-		<?php if (is_home() && !easel_sidebars_disabled()) easel_get_sidebar('over-blog'); ?>
 
 
 
