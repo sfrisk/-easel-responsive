@@ -270,4 +270,17 @@ refer to the easel plugin  */
 	#footer{
 		background: transparent;
 	}
+
+	.comicSidebars2 #comic, 
+	.comicSidebars1 #comic{
+		width: 100%;
+		float:none;
+		margin:0;
+		padding:0;
+	}
+	/* For mobile browsing optimization/ease of naviation, 
+	I'm just hiding all comic sidebars */
+	#comic-wrap .sidebar{
+		display:none;
+	}
 }
