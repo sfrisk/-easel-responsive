@@ -7,7 +7,7 @@
 		
 		<?php do_action('easel-footer'); ?>
 		<?php easel_get_sidebar('footer'); ?>
-		<?php if (!easel_themeinfo('disable_footer_text')) easel_footer_text(); ?>
+		<?php if (!easel_themeinfo('disable_footer_text')) easel_copyright_text(); ?>
 		</div>
 	</footer>
 
